@@ -335,6 +335,11 @@ function draw(){
 
     let mdlMatrix = new Matrix4(); //model matrix of objects
 
+    //point light
+    mdlMatrix.translate(-2.1, 1.8, 0);
+    mdlMatrix.scale(0.1, 0.1, 0.1);
+    drawOneObject(ball, mdlMatrix, 200, 200, 0);
+
     //Cube (ground)
     //TODO-1: set mdlMatrix for the cube
     mdlMatrix.setScale(2.0, 0.2, 1.0);
